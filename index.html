@@ -7,13 +7,28 @@
     <body>
         <h1>Client-Side JS - Navigator</h1>
         <h2>Week 1</h2>
-        <ul>
-            <li>
-                <a href="https://commanderkv.github.io/Client-Side-JS/week-1/index.html">week-1/index.html</a>
-            </li>
-            <li>
-                <a href="https://commanderkv.github.io/Client-Side-JS/week-2/index.html">week-2/index.html</a>
-            </li>
+        <ul id="fileList">
+            <!-- Links will be inserted here by JavaScript -->
         </ul>
+
+        <script>
+            var files = [
+                "week-1/index.html",
+                "week-1/week-1-demo.html",
+                "week-1/script.js",
+                "week-2/index.html"
+            ];
+
+            var fileList = document.getElementById('fileList');
+
+            files.forEach(function(file) {
+                var li = document.createElement('li');
+                var a = document.createElement('a');
+                a.href = "https://commanderkv.github.io/Client-Side-JS/" + file;
+                a.textContent = file;
+                li.appendChild(a);
+                fileList.appendChild(li);
+            });
+        </script>
     </body>
-  </html>
+</html>
