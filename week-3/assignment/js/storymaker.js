@@ -72,12 +72,12 @@ var storyArray = [];
 /* Functions
 -------------------------------------------------- */
 function getRandomElement(array) {
-    // variable to get array element and displaying it
+    // Return value to get array element and displaying it
     return array[Math.floor(Math.random() * array.length)];
 }
 
 function noun1_on_click() {
-    // variable to get array element and displaying it
+    // Get a noun from the noun1 array
     var noun = getRandomElement(noun1Array);
 
     // Add the noun to the story array
@@ -131,7 +131,7 @@ function setting_on_click() {
     settingDisplay.textContent += setting + " ";
 }
 
-// concatenate the user story and display
+// Concatenate the user story and display
 function playback_on_click() {
     // Loop through the story array and concatenate each one into a string
     var story = ""
@@ -143,7 +143,7 @@ function playback_on_click() {
     storyDisplay.textContent = story;
 }
 
-// grabbing random element from arrays, concatenate and display
+// Grabbing random element from arrays, concatenate and display
 function random_on_click() {
     // Reset the story array
     reset_on_click();
@@ -194,5 +194,5 @@ randomStoryButton.addEventListener("click", random_on_click);
 // Event listener for the reset button
 resetButton.addEventListener("click", reset_on_click);
 
-// Evevent listiner for student ID
-document.addEventListener("DOMContentLoaded", studentIdDisplay);
+// Event listener for student ID
+document.getElementById("studentIdButton").addEventListener("click", studentIdDisplay);
