@@ -21,8 +21,12 @@ section:nth-child(4) {
     display: flex;
     align-items: center;
 }
-section:last-child {
+#display-buttons {
     display: block;
+}
+
+#display-buttons > * {
+    margin: 0px
 }
 
 

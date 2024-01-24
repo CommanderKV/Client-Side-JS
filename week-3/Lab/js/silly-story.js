@@ -51,6 +51,7 @@ function result() {
     xItem, yItem, and zItem. Each time, be sure to update the variable newStory 
     (with =). You might need to do one of the above replacements twice! */
     newStory = newStory.replace(":insertx:", xItem);
+    newStory = newStory.replace(":insertx:", xItem);
     newStory = newStory.replace(":inserty:", yItem);
     newStory = newStory.replace(":insertz:", zItem);
 
