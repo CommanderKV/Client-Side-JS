@@ -67,7 +67,7 @@ var settingArray = [
 ];
 
 // Variables for count to grab array elements
-var storyArray = ["". "", "", "", ""];
+var storyArray = [];
 
 /* Functions
 -------------------------------------------------- */
