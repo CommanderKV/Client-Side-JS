@@ -67,7 +67,7 @@ var settingArray = [
 ];
 
 // Variables for count to grab array elements
-var storyArray = [];
+var storyArray = ["". "", "", "", ""];
 
 /* Functions
 -------------------------------------------------- */
@@ -81,10 +81,10 @@ function noun1_on_click() {
     var noun = getRandomElement(noun1Array);
 
     // Add the noun to the story array
-    storyArray.push(noun);
+    storyArray[0] = noun;
 
     // Display the noun
-    noun1Display.textContent += noun + " ";
+    noun1Display.textContent = noun;
 }
 
 function verb_on_click() {
@@ -92,10 +92,10 @@ function verb_on_click() {
     var verb = getRandomElement(verbArray);
 
     // Add the verb to the story array
-    storyArray.push(verb);
+    storyArray[1] = verb;
 
     // Display the verb
-    verbDisplay.textContent += verb + " ";
+    verbDisplay.textContent = verb;
 }
 
 function adjective_on_click() {
@@ -103,10 +103,10 @@ function adjective_on_click() {
     var adjective = getRandomElement(adjectiveArray);
 
     // Add the adjective to the story array
-    storyArray.push(adjective);
+    storyArray[2] = adjective;
 
     // Display the adjective
-    adjectiveDisplay.textContent += adjective + " ";
+    adjectiveDisplay.textContent = adjective;
 }
 
 function noun2_on_click() {
@@ -114,10 +114,10 @@ function noun2_on_click() {
     var noun = getRandomElement(noun2Array);
 
     // Add the noun to the story array
-    storyArray.push(noun);
+    storyArray[3] = noun;
 
     // Display the noun
-    noun2Display.textContent += noun + " ";
+    noun2Display.textContent = noun;
 }
 
 function setting_on_click() {
@@ -125,10 +125,10 @@ function setting_on_click() {
     var setting = getRandomElement(settingArray);
 
     // Add the setting to the story array
-    storyArray.push(setting);
+    storyArray[4] = setting;
 
     // Display the setting
-    settingDisplay.textContent += setting + " ";
+    settingDisplay.textContent = setting;
 }
 
 // Concatenate the user story and display
