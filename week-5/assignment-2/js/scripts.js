@@ -10,17 +10,17 @@ function changeCustomColor() {
 
     // Apply the background color based on the value of 
     // the user input
-    if (UserEntry.value < 0 || UserEntry.value > 100) {
+    if (UserEntry.value <= 0 || UserEntry.value > 100) {
         document.body.style.backgroundColor = "red";
-    } else if (UserEntry.value > 0 && UserEntry.value < 20) {
+    } else if (UserEntry.value > 0 && UserEntry.value <= 20) {
         document.body.style.backgroundColor = "green";
-    } else if (UserEntry.value > 20 && UserEntry.value < 40) {
+    } else if (UserEntry.value > 20 && UserEntry.value <= 40) {
         document.body.style.backgroundColor = "blue";
-    } else if (UserEntry.value > 40 && UserEntry.value < 60) {
+    } else if (UserEntry.value > 40 && UserEntry.value <= 60) {
         document.body.style.backgroundColor = "orange";
-    } else if (UserEntry.value > 60 && UserEntry.value < 80) {
+    } else if (UserEntry.value > 60 && UserEntry.value <= 80) {
         document.body.style.backgroundColor = "purple";
-    } else if (UserEntry.value > 80 && UserEntry.value < 100) {
+    } else if (UserEntry.value > 80 && UserEntry.value <= 100) {
         document.body.style.backgroundColor = "yellow";
     }
 }
