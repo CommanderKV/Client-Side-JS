@@ -1,0 +1,62 @@
+/* Set the default background color and font */
+html {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-color: #f8f8f8;
+}
+
+/* Positioning of elements */
+div {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+div > :first-child {
+    margin-right: 5px;
+}
+
+/* Modify how the buttons look */
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+/* Limit the size of the image */
+img {
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 35px;
+}
+
+/* Styling the image selector */
+select {
+    padding: 2px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+}
+
+select > option:checked {
+    background-color: #4CAF50;
+    color: white;
+    width: 100px;
+}
+
+/* Styling the input field */
+input {
+    padding: 2px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+    cursor: pointer;
+    width: 45px;
+    background-color: #4CAF50;
+    color: white;
+}
