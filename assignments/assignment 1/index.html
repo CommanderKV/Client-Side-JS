@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="/js/index.js" defer></script>
+        <title>Pizza maker</title>
+    </head>
+    <body>
+        <header>
+            <div id="student-info"></div>
+        </header>
+        <body>
+            <form id="pizza-form">
+                <h1>Pizza Maker</h1>
+                <div>
+                    <div>
+                        <h2>Size</h2>
+                        <input type="radio" name="size" value="small" required>Small<br>
+                        <input type="radio" name="size" value="medium" checked>Medium<br>
+                        <input type="radio" name="size" value="large">Large<br>
+                    </div>
+
+                    <div>
+                        <h2>Toppings</h2>
+                        <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+                        <input type="checkbox" name="toppings" value="sausage">Sausage<br>
+                        <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+                        <input type="checkbox" name="toppings" value="onions">Onions<br>
+                        <input type="checkbox" name="toppings" value="green peppers">Green Peppers<br>
+                        <input type="checkbox" name="toppings" value="black olives">Black Olives<br>
+                        <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
+                        <input type="checkbox" name="toppings" value="spinach">Spinach<br>
+                        <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
+                        <input type="checkbox" name="toppings" value="anchovies">Anchovies<br>
+                    </div>
+
+                    <div>
+                        <h2>Chesse level</h2>
+                        <input type="radio" name="cheese" value="none">None<br>
+                        <input type="radio" name="cheese" value="light">Light<br>
+                        <input type="radio" name="cheese" value="normal" checked>Normal<br>
+                        <input type="radio" name="cheese" value="extra">Extra<br>
+                        <input type="radio" name="cheese" value="extreme">Extreme<br>
+                        <input type="radio" name="cheese" value="ALL of the">ALL THE CHEESE!<br>
+                    </div>
+
+                    <div>
+                        <h2>Special Instructions</h2>
+                        <textarea name="instructions" rows="4" cols="50"></textarea>
+                    </div>
+                </div>
+
+                <input id="submit-button" type="submit" value="Order">
+            </form>
+
+            <p id="pizza-desc"></p>
+        </body>
+
+        <footer>
+            <ul>
+                <li><h1>Contact</h1></li>
+                <li>123-456-7890</li>
+                <li>example@gmail.com</li>
+            </ul>
+        </footer>
+    </body>
+</html>

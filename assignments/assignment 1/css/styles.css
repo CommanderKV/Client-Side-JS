@@ -1,0 +1,48 @@
+html {
+    background-color: black;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+form > div > div {
+    display: block;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    background-color: #ee7f00;
+    padding: 10px;
+    border-radius: 10px;
+}
+form #submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ee7f00;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+form h1 {
+    margin: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+#pizza-desc {
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+}
