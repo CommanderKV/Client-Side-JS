@@ -10,6 +10,7 @@ var icao = document.getElementById("ICAO");
 var iata = document.getElementById("IATA");
 var aircraftData = document.getElementById("aircraft");
 var total = document.getElementById("total");
+var studentInfo = document.getElementById("student-info");
 
 
 // Get the airline name from the form
@@ -88,6 +89,9 @@ async function displayData() {
 }
 
 airlineSubmit.addEventListener("click", function() {
+    // Display the student info
+    studentInfo.textContent = "Name: Kyler. V #200591612";
+
     // Clear the data
     logo.setAttribute("src", "");
     companyName.textContent = "";
@@ -95,6 +99,7 @@ airlineSubmit.addEventListener("click", function() {
     iata.textContent = "";
     aircraftData.innerHTML = "";
     total.textContent = "";
+
     displayData();
 });
 
