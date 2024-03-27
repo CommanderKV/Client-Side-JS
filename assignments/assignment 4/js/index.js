@@ -64,7 +64,6 @@ async function displayData() {
     iata.textContent = data[index].iata;
 
     var aircraftList = data[index].fleet;
-    console.log(aircraftList);
     for (const [key, value] of Object.entries(aircraftList)) {
         // Make sure we aren't adding the total to the aircraft data
         if (key != "total") {
@@ -103,6 +102,7 @@ airlineSubmit.addEventListener("click", function() {
     aircraftData.innerHTML = "";
     total.textContent = "";
 
+    // Display the data
     displayData();
 });
 
