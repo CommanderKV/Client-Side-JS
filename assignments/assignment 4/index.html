@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Airlines</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Airlines</h1>
+            <p id="student-info"></p>
+        </header>
+        <main>
+            <form>
+                <label>
+                    <input type="radio" id="delta-arlines" name="airline" value="delta air lines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Delta air lines
+                </label>
+
+                <label>
+                    <input type="radio" id="delta-private" name="airline" value="delta private">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Delta private
+                </label>
+
+                <label>
+                    <input type="radio" id="china-united-airlines" name="airline" value="china united airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    China United airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="united-airlines" name="airline" value="united airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    United airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="united-nations" name="airline" value="united nations">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    United nations
+                </label>
+
+                <label>
+                    <input type="radio" id="united-states" name="airline" value="united states">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    United states - US Forset Service
+                </label>
+
+                <label>
+                    <input type="radio" id="american-air-charter" name="airline" value="american air charter">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    American air charter
+                </label>
+
+                <label>
+                    <input type="radio" id="american-airlines" name="airline" value="american airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    American airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="central-air-southwest" name="airline" value="central air southwest">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Central air southwest
+                </label>
+
+                <label>
+                    <input type="radio" id="southwest-airlines" name="airline" value="southwest airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Southwest airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="jetblue" name="airline" value="jetblue">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    JetBlue
+                </label>
+
+                <label>
+                    <input type="radio" id="alaska-airlines" name="airline" value="alaska airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Alaska airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="alaska-central-express" name="airline" value="alaska central express">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Alaska central express
+                </label>
+
+                <label>
+                    <input type="radio" id="everts-air-alaska" name="airline" value="everts air alaska">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Everts air alaska
+                </label>
+
+                <label>
+                    <input type="radio" id="ravan-alaska" name="airline" value="ravan alaska">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Ravan alaska
+                </label>
+
+                <label>
+                    <input type="radio" id="spirit-airlines" name="airline" value="spirit airlines">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Spirit airlines
+                </label>
+
+                <label>
+                    <input type="radio" id="spiritjets" name="airline" value="spiritjets">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Spiritjets
+                </label>
+
+                <label>
+                    <input type="radio" id="frontier" name="airline" value="frontier">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Frontier
+                </label>
+
+                <label>
+                    <input type="radio" id="allegiant" name="airline" value="allegiant">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Allegiant
+                </label>
+
+                <label>
+                    <input type="radio" id="hawaiian" name="airline" value="hawaiian">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Hawaiian
+                </label>
+
+                <label>
+                    <input type="radio" id="virgin-atlantic" name="airline" value="virgin atlantic">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Virgin atlantic
+                </label>
+                
+                <label>
+                    <input type="radio" id="virgin-australia" name="airline" value="virgin australia">
+                    <img src="" width="0" height="0" style="visibility: hidden;">
+                    Virgin australia
+                </label>
+
+                <button type="button" id="submit-button">Get details</button>
+            </form>
+            <section id="details">
+                <p id="error"></p>
+                <h1 id="name"></h1>
+                <h2>Logo (Some don't have logo's):</h2>
+                <img id="logo" src="" alt="Airline logo" style="visibility: hidden;">
+                <div>
+                    <p>International Civil Aviation Organization (ICAO) 3-character airline code.</p>
+                    <p id="ICAO"></p>
+                </div>
+                <div>
+                    <p>International Air Transport Association (IATA) 2-character airline code</p>
+                    <p id="IATA"></p>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aircraft Type</th>
+                            <th>Amount of aircraft</th>
+                        </tr>
+                    </thead>
+                    <tbody id="aircraft">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td id="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>
