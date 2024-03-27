@@ -49,18 +49,21 @@ async function getData(companyName=null) {
 async function displayData() {
     // Get data from the API
     const data = await getData();
-    console.log(data[0]);
+    var index = 0;
+    if (data.length == 2) {
+        index = 1;
+    }
 
     // Set the logo, name, ICAO, and IATA
-    if (data[0].logo_url != undefined) {
-        logo.setAttribute("src", data[0].logo_url);
+    if (data[index].logo_url != undefined) {
+        logo.setAttribute("src", data[index].logo_url);
     }
     logo.setAttribute("style", "visibility: visible;");
-    companyName.textContent = data[0].name;
-    icao.textContent = data[0].icao;
-    iata.textContent = data[0].iata;
+    companyName.textContent = data[index].name;
+    icao.textContent = data[index].icao;
+    iata.textContent = data[index].iata;
 
-    var aircraftList = data[0].fleet;
+    var aircraftList = data[index].fleet;
     console.log(aircraftList);
     for (const [key, value] of Object.entries(aircraftList)) {
         // Make sure we aren't adding the total to the aircraft data
