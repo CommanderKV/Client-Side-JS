@@ -1,16 +1,16 @@
 // Get all inputs
-var airlineForm = document.querySelector("form");
-var airlineSubmit = document.getElementById("submit-button");
+const airlineForm = document.querySelector("form");
+const airlineSubmit = document.getElementById("submit-button");
 
 // Get all outputs
-var error = document.getElementById("error");
-var logo = document.getElementById("logo");
-var companyName = document.getElementById("name");
-var icao = document.getElementById("ICAO");
-var iata = document.getElementById("IATA");
-var aircraftData = document.getElementById("aircraft");
-var total = document.getElementById("total");
-var studentInfo = document.getElementById("student-info");
+const error = document.getElementById("error");
+const logo = document.getElementById("logo");
+const companyName = document.getElementById("name");
+const icao = document.getElementById("ICAO");
+const iata = document.getElementById("IATA");
+const aircraftData = document.getElementById("aircraft");
+const total = document.getElementById("total");
+const studentInfo = document.getElementById("student-info");
 
 
 // Get the airline name from the form
